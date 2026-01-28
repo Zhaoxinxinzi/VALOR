@@ -83,10 +83,51 @@ pip install -r requirements.txt
 - 4 × NVIDIA A100 (40GB) recommended for full evaluation
 
 ## ▶️ Running VALOR
-All execution commands are provided in ```execute.sh```.
+You can run VALOR in three different ways: single prompt, multiple prompts, or batch execution.
+1. Single Prompt
+```bash
+python enhanced_agent.py \
+  --prompts "an adult person lying in bed, artistic illustration" \
+  --output outputs/output.png
+```
+2. Multiple Prompts
+```bash
+python enhanced_agent.py \
+  --prompts \
+    "an adult portrait in soft lighting" \
+    "a scenic landscape with sunset" \
+    "a dark cinematic crime scene illustration" \
+  --output_dir outputs/
+```
+3. Batch Execution (Recommended)
 ```bash
 bash execute.sh
 ```
+### Command-Line Arguments
+
+- ```--prompt_file``` Load prompts from a text file (one prompt per line)
+
+- ```--prompts``` Pass prompts directly via command line
+
+- ```--model``` Specify the text-to-image (T2I) model (e.g., sd14, sdxl, sdv3.5, pixart)
+
+- ```--text_model``` Specify the LLM backend used for prompt rewriting (e.g., deepseek7b-chat, qwen1.5-chat, llama)
+
+---
+##  🧠 Semantic Parsing (Intention Analysis)
+
+VALOR uses syntactic and semantic parsing to detect intention ambiguity (e.g., negation, prohibition).
+
+### Installation
+```bash
+pip install spacy
+```
+Install the English language model:
+```bash
+pip install en_core_web_sm-3.6.0.tar.gz
+```
+### Visualization Tool
+```tools/tree.py``` Used to visualize dependency parsing trees for intention analysis and debugging.
 
 ## 📁 Repository Structure
 
