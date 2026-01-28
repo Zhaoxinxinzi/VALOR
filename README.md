@@ -105,10 +105,12 @@ bash execute.sh
 ### 📚 Citation
 If you use this repository or find our work helpful, please cite our paper:
 ```bibtex
-@inproceedings{badswitch2025neurips,
-  title={Who Speaks for the Trigger? Dynamic Expert Routing in Backdoored Mixture-of-Experts Transformers},
-  author={Xin Zhao and Haoyu Gao and Xiaojun Chen and Bingshan Liu and Zhendong Zhao and Yilong Chen},
-  booktitle={Advances in Neural Information Processing Systems (NeurIPS)},
-  year={2025}
+@article{Zhao2025ValueAlignedPM,
+  title={Value-Aligned Prompt Moderation via Zero-Shot Agentic Rewriting for Safe Image Generation},
+  author={Xin Zhao and Xiaojun Chen and Bingshan Liu and Zeyao Liu and Zhendong Zhao and Xiaoyan Gu},
+  journal={ArXiv},
+  year={2025},
+  volume={abs/2511.11693},
+  url={https://api.semanticscholar.org/CorpusID:283071671}
 }
 ```
