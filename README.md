@@ -75,7 +75,7 @@ VALOR follows a **detect → rewrite → verify** pipeline:
 ```bash
 pip install -r requirements.txt
 ```
-### Tested environment
+### Tested Environment
 
 - Python ≥ 3.8
 - PyTorch ≥ 1.10
